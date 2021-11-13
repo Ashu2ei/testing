@@ -62,3 +62,12 @@ class User(AbstractBaseUser, PermissionsMixin):
         verbose_name_plural = _('users')
     
     
+class Input(models.Model):
+    name = models.CharField(max_length = 100 , blank = True, null = True)
+
+    def __str__(self):
+        return str(self.name)
+
+class Stutus(models.Model):
+    text = models.CharField(max_length=100 ,blank=True, null=True)
+    choices = models.ManyToManyField(Input)
