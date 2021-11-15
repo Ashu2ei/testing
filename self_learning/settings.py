@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'authentication',
     'rest_framework',
-    'rest_framework_simplejwt.token_blacklist',
+    #'rest_framework_simplejwt.token_blacklist',
 
 ]
 
@@ -79,14 +79,23 @@ REST_FRAMEWORK = {
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'projectdata',
+#         'USER': 'ashutosh',
+#         'PASSWORD':'apple',
+#         'HOST': 'localhost', # set in docker-compose.yml
+#         'PORT': '', # default postgres port
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'projectdata',
-        'USER': 'ashutosh',
-        'PASSWORD':'apple',
-        'HOST': 'localhost', # set in docker-compose.yml
-        'PORT': '', # default postgres port
+        'ENGINE': 'djongo',
+        'NAME': 'bezkoder_db',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
