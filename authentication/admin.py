@@ -4,7 +4,7 @@ from django.contrib import admin
 
 from .models import User , Input , Stutus
 # from django.contrib.auth.admin import UserAdmin
-
+#######
 # class NewOutstandingTokenAdmin(OutstandingTokenAdmin):
 
 #     def has_delete_permission(self, *args, **kwargs):
