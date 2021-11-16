@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'authentication',
     'rest_framework',
+    'student',
     #'rest_framework_simplejwt.token_blacklist',
 
 ]
