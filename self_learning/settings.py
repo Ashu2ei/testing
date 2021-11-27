@@ -79,16 +79,16 @@ REST_FRAMEWORK = {
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'projectdata',
-#         'USER': 'ashutosh',
-#         'PASSWORD':'apple',
-#         'HOST': 'localhost', # set in docker-compose.yml
-#         'PORT': '', # default postgres port
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'demo_1',
+        'USER': 'ashutosh',
+        'PASSWORD':'002ei180',
+        'HOST': 'localhost', # set in docker-compose.yml
+        'PORT': '', # default postgres port
+    }
+}
 
 DATABASES = {
     'default': {
